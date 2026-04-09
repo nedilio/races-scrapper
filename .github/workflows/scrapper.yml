@@ -1,0 +1,33 @@
+name: Scraper Bun
+
+on:
+  schedule:
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Install deps
+        run: bun install
+
+      - name: Install Playwright browsers
+        run: bunx playwright install --with-deps
+
+      - name: Run scraper
+        run: bun run scrape
+
+      - name: Commit JSON
+        run: |
+          git config --global user.name "bot"
+          git config --global user.email "bot@github.com"
+          git add data/races.json
+          git commit -m "update races" || echo "no changes"
+          git push
