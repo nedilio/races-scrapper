@@ -2,7 +2,7 @@
 import { chromium } from "playwright-extra";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
 import { writeFileSync } from "fs";
-import { formatDate } from "./lib/date";
+import { formatDate, isRaceActive } from "./lib/date";
 
 chromium.use(StealthPlugin());
 
@@ -35,8 +35,12 @@ const formattedRaces = races.map((race) => ({
   date: formatDate(race.date ?? ""),
 }));
 
-writeFileSync("data/races.json", JSON.stringify(formattedRaces, null, 2));
+const activeRaces = formattedRaces.filter((race) => isRaceActive(race.date));
+
+if (activeRaces.length > 0) {
+  writeFileSync("data/races.json", JSON.stringify(activeRaces, null, 2));
+}
 
 await browser.close();
 
-console.log("End Scrapping");
+console.log(`End Scrapping - Found ${activeRaces.length} active races`);
