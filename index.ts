@@ -17,8 +17,6 @@ await page.goto(
 );
 
 const races = await page.evaluate(() => {
-  console.log("content is this working?");
-
   return Array.from(document.querySelectorAll("table tr"))
     .slice(1, 10)
     .map((row) => {
@@ -26,6 +24,8 @@ const races = await page.evaluate(() => {
       return {
         name: cols[1]?.textContent?.trim(),
         date: cols[0]?.textContent?.trim(),
+        class: cols[2]?.textContent?.trim(),
+        link: cols[1]?.querySelector("a")?.href,
       };
     });
 });

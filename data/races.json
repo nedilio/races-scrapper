@@ -1,14 +1,14 @@
 [
   {
     "name": "O Gran Camiño -  The Historical Route",
-    "date": "2026-04-14 - 2026-04-18"
-  },
-  {
-    "name": "Ronde van Limburg",
-    "date": "2026-04-15"
+    "date": "2026-04-14 - 2026-04-18",
+    "class": "2.1",
+    "link": "https://www.procyclingstats.com/race/gran-camino/2026/overview"
   },
   {
     "name": "Tour of Hainan",
-    "date": "2026-04-15 - 2026-04-19"
+    "date": "2026-04-15 - 2026-04-19",
+    "class": "2.Pro",
+    "link": "https://www.procyclingstats.com/race/tour-of-hainan/2026/overview"
   }
 ]
