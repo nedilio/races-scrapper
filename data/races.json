@@ -1,20 +1,14 @@
 [
   {
-    "name": "O Gran Camiño -  The Historical Route",
-    "date": "2026-04-14 - 2026-04-18",
-    "class": "2.1",
-    "link": "https://www.procyclingstats.com/race/gran-camino/2026/overview"
-  },
-  {
     "name": "Tour of Hainan",
     "date": "2026-04-15 - 2026-04-19",
     "class": "2.Pro",
     "link": "https://www.procyclingstats.com/race/tour-of-hainan/2026/overview"
   },
   {
-    "name": "Tour du Jura Cycliste",
-    "date": "2026-04-18",
-    "class": "1.1",
-    "link": "https://www.procyclingstats.com/race/tour-du-jura-cycliste/2026/overview"
+    "name": "Amstel Gold Race",
+    "date": "2026-04-19",
+    "class": "1.UWT",
+    "link": "https://www.procyclingstats.com/race/amstel-gold-race/2026/overview"
   }
 ]
