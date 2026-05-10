@@ -12,9 +12,15 @@
     "link": "https://www.procyclingstats.com/race/giro-d-italia/2026/overview"
   },
   {
-    "name": "Grand Prix du Morbihan",
-    "date": "2026-05-09",
+    "name": "Tro-Bro Léon",
+    "date": "2026-05-10",
     "class": "1.Pro",
-    "link": "https://www.procyclingstats.com/race/gp-de-plumelec/2026/overview"
+    "link": "https://www.procyclingstats.com/race/tro-bro-leon/2026/overview"
+  },
+  {
+    "name": "Baku-Khankendi Azerbaijan Cycling race",
+    "date": "2026-05-10 - 2026-05-14",
+    "class": "2.1",
+    "link": "https://www.procyclingstats.com/race/baku-khankendi-azerbaijan-cycling-race/2026/overview"
   }
 ]
