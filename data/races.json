@@ -1,14 +1,14 @@
 [
   {
-    "name": "Ethias-Tour de Wallonie",
-    "date": "2026-06-01 - 2026-06-05",
-    "class": "2.Pro",
-    "link": "https://www.procyclingstats.com/race/tour-de-wallonie/2026/overview"
-  },
-  {
     "name": "Tour of Estonia",
     "date": "2026-06-04 - 2026-06-06",
     "class": "2.1",
     "link": "https://www.procyclingstats.com/race/tour-of-estonia/2026/overview"
+  },
+  {
+    "name": "Heylen Vastgoed Heistse Pijl",
+    "date": "2026-06-06",
+    "class": "1.1",
+    "link": "https://www.procyclingstats.com/race/heist-op-den-berg/2026/overview"
   }
 ]
