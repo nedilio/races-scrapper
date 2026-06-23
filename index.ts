@@ -41,11 +41,13 @@ try {
     ...race,
     date: formatDate(race.date ?? ""),
   }));
+  console.log("Formatted races:", formattedRaces);
   const activeRaces = formattedRaces.filter((race) => isRaceActive(race.date));
-  if (activeRaces.length > 0) {
-    writeFileSync("data/races.json", JSON.stringify(activeRaces, null, 2));
-  }
-  console.log(`End Scrapping - Found ${activeRaces.length} active races`);
+  console.log(`Found ${activeRaces.length} active races:`, activeRaces);
+
+  // Always write the file, even if empty
+  writeFileSync("data/races.json", JSON.stringify(activeRaces, null, 2));
+  console.log("File written successfully to data/races.json");
 } catch (error) {
   console.error("Error evaluating races:", error);
   const races = [];
