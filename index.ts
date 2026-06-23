@@ -13,13 +13,21 @@ const page = await browser.newPage();
 
 await page.goto(
   "https://www.procyclingstats.com/races.php?popular=pro_me&s=upcoming-races&category=1",
-  { waitUntil: "load" },
+  { waitUntil: "domcontentloaded", timeout: 60000 },
 );
 
-const races = await page.evaluate(() => {
-  return Array.from(document.querySelectorAll("table tr"))
-    .slice(1, 10)
-    .map((row) => {
+// Wait for table to be present with longer timeout
+await page.waitForSelector("table tr", { timeout: 15000 });
+// Give the page a moment to fully render
+await page.waitForTimeout(1000);
+
+let races;
+try {
+  races = await page.evaluate(() => {
+    const rows = Array.from(document.querySelectorAll("table tr")).slice(1, 10);
+    console.log(`Found ${rows.length} rows`);
+
+    return rows.map((row) => {
       const cols = row.querySelectorAll("td");
       return {
         name: cols[1]?.textContent?.trim(),
@@ -28,7 +36,12 @@ const races = await page.evaluate(() => {
         link: cols[1]?.querySelector("a")?.href,
       };
     });
-});
+  });
+  console.log("Races evaluated successfully:", races);
+} catch (error) {
+  console.error("Error evaluating races:", error);
+  races = [];
+}
 
 const formattedRaces = races.map((race) => ({
   ...race,
