@@ -41,8 +41,8 @@ try {
     ...race,
     date: formatDate(race.date ?? ""),
   }));
-  console.log("Formatted races:", formattedRaces);
   const activeRaces = formattedRaces.filter((race) => isRaceActive(race.date));
+  console.log({ activeRaces });
   console.log(`Found ${activeRaces.length} active races:`, activeRaces);
 
   // Always write the file, even if empty
