@@ -21,9 +21,8 @@ await page.waitForSelector("table tr", { timeout: 15000 });
 // Give the page a moment to fully render
 await page.waitForTimeout(1000);
 
-let races;
 try {
-  races = await page.evaluate(() => {
+  const races = await page.evaluate(() => {
     const rows = Array.from(document.querySelectorAll("table tr")).slice(1, 10);
     console.log(`Found ${rows.length} rows`);
 
@@ -38,22 +37,18 @@ try {
     });
   });
   console.log("Races evaluated successfully:", races);
+  const formattedRaces = races.map((race) => ({
+    ...race,
+    date: formatDate(race.date ?? ""),
+  }));
+  const activeRaces = formattedRaces.filter((race) => isRaceActive(race.date));
+  if (activeRaces.length > 0) {
+    writeFileSync("data/races.json", JSON.stringify(activeRaces, null, 2));
+  }
+  console.log(`End Scrapping - Found ${activeRaces.length} active races`);
 } catch (error) {
   console.error("Error evaluating races:", error);
-  races = [];
-}
-
-const formattedRaces = races.map((race) => ({
-  ...race,
-  date: formatDate(race.date ?? ""),
-}));
-
-const activeRaces = formattedRaces.filter((race) => isRaceActive(race.date));
-
-if (activeRaces.length > 0) {
-  writeFileSync("data/races.json", JSON.stringify(activeRaces, null, 2));
+  const races = [];
 }
 
 await browser.close();
-
-console.log(`End Scrapping - Found ${activeRaces.length} active races`);
