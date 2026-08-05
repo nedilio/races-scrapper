@@ -1,8 +1,26 @@
 [
   {
-    "name": "Tour de France",
-    "date": "2026-07-04 - 2026-07-26",
+    "name": "China Xizang Trans-Himalaya",
+    "date": "2026-08-02 - 2026-08-06",
+    "class": "2.1",
+    "link": "https://www.procyclingstats.com/race/trans-himalaya-cycling-race/2026/overview"
+  },
+  {
+    "name": "Tour de Pologne",
+    "date": "2026-08-03 - 2026-08-09",
     "class": "2.UWT",
-    "link": "https://www.procyclingstats.com/race/tour-de-france/2026/overview"
+    "link": "https://www.procyclingstats.com/race/tour-de-pologne/2026/overview"
+  },
+  {
+    "name": "Vuelta a Burgos",
+    "date": "2026-08-04 - 2026-08-08",
+    "class": "2.Pro",
+    "link": "https://www.procyclingstats.com/race/vuelta-a-burgos/2026/overview"
+  },
+  {
+    "name": "Volta a Portugal em Bicicleta",
+    "date": "2026-08-05 - 2026-08-16",
+    "class": "2.1",
+    "link": "https://www.procyclingstats.com/race/volta-a-portugal/2026/overview"
   }
 ]
