@@ -6,9 +6,15 @@
     "link": "https://www.procyclingstats.com/race/vuelta-a-espana/2026/overview"
   },
   {
-    "name": "Grand Prix Cycliste de Québec",
-    "date": "2026-09-11",
-    "class": "1.UWT",
-    "link": "https://www.procyclingstats.com/race/gp-quebec/2026/overview"
+    "name": "Memorial Marco Pantani",
+    "date": "2026-09-12",
+    "class": "1.1",
+    "link": "https://www.procyclingstats.com/race/memorial-marco-pantani/2026/overview"
+  },
+  {
+    "name": "Tour of Taihu Lake",
+    "date": "2026-09-12 - 2026-09-16",
+    "class": "2.1",
+    "link": "https://www.procyclingstats.com/race/tour-of-taihu-lake/2026/overview"
   }
 ]
