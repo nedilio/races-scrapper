@@ -1,32 +1,8 @@
 [
   {
-    "name": "La Vuelta Ciclista a España",
-    "date": "2026-08-22 - 2026-09-13",
-    "class": "2.UWT",
-    "link": "https://www.procyclingstats.com/race/vuelta-a-espana/2026/overview"
-  },
-  {
     "name": "Tour of Taihu Lake",
     "date": "2026-09-12 - 2026-09-16",
     "class": "2.1",
     "link": "https://www.procyclingstats.com/race/tour-of-taihu-lake/2026/overview"
-  },
-  {
-    "name": "Grand Prix Cycliste de Montréal",
-    "date": "2026-09-13",
-    "class": "1.UWT",
-    "link": "https://www.procyclingstats.com/race/gp-montreal/2026/overview"
-  },
-  {
-    "name": "Trofeo Matteotti",
-    "date": "2026-09-13",
-    "class": "1.1",
-    "link": "https://www.procyclingstats.com/race/trofeo-matteotti/2026/overview"
-  },
-  {
-    "name": "GP de Fourmies / La Voix du Nord",
-    "date": "2026-09-13",
-    "class": "1.Pro",
-    "link": "https://www.procyclingstats.com/race/gp-de-fourmies/2026/overview"
   }
 ]
