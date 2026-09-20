@@ -18,15 +18,33 @@
     "link": "https://www.procyclingstats.com/race/tour-of-huangshan/2026/overview"
   },
   {
-    "name": "Flandrien 0.0 Classic",
-    "date": "2026-09-19",
-    "class": "1.Pro",
-    "link": "https://www.procyclingstats.com/race/gp-impanis-van-petegem/2026/overview"
+    "name": "Gooikse pijl p/b Lotto",
+    "date": "2026-09-20",
+    "class": "1.1",
+    "link": "https://www.procyclingstats.com/race/gooikse-pijl/2026/overview"
   },
   {
-    "name": "Gran Premio del Lazio",
-    "date": "2026-09-19",
+    "name": "Grand Prix d'Isbergues - Pas de Calais",
+    "date": "2026-09-20",
     "class": "1.1",
-    "link": "https://www.procyclingstats.com/race/gran-premio-del-lazio/2026/overview"
+    "link": "https://www.procyclingstats.com/race/gp-d-isbergues/2026/overview"
+  },
+  {
+    "name": "World Championships ME - ITT",
+    "date": "2026-09-20",
+    "class": "WC",
+    "link": "https://www.procyclingstats.com/race/world-championship-itt/2026/overview"
+  },
+  {
+    "name": "Giro di Campania",
+    "date": "2026-09-20",
+    "class": "1.1",
+    "link": "https://www.procyclingstats.com/race/giro-di-campania/2026/overview"
+  },
+  {
+    "name": "Asian Games ME - ITT",
+    "date": "2026-09-20",
+    "class": "JC",
+    "link": "https://www.procyclingstats.com/race/summer-asian-games-itt/2026/overview"
   }
 ]
