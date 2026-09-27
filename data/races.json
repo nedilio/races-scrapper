@@ -4,5 +4,23 @@
     "date": "2026-09-22 - 2026-09-27",
     "class": "2.Pro",
     "link": "https://www.procyclingstats.com/race/tour-of-croatia/2026/overview"
+  },
+  {
+    "name": "World Championships ME - Road Race",
+    "date": "2026-09-27",
+    "class": "WC",
+    "link": "https://www.procyclingstats.com/race/world-championship/2026/overview"
+  },
+  {
+    "name": "Petronas Le Tour de Langkawi",
+    "date": "2026-09-27 - 2026-10-04",
+    "class": "2.Pro",
+    "link": "https://www.procyclingstats.com/race/tour-de-langkawi/2026/overview"
+  },
+  {
+    "name": "Paris-Chauny",
+    "date": "2026-09-27",
+    "class": "1.1",
+    "link": "https://www.procyclingstats.com/race/paris-chauny-classique/2026/overview"
   }
 ]
