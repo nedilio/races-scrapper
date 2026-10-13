@@ -1,8 +1,14 @@
 [
   {
-    "name": "Tour de Kyushu",
-    "date": "2026-10-10 - 2026-10-12",
+    "name": "Tour of Guangxi",
+    "date": "2026-10-13 - 2026-10-18",
+    "class": "2.UWT",
+    "link": "https://www.procyclingstats.com/race/tour-of-guangxi-2026-gc/overview"
+  },
+  {
+    "name": "Eneco Tour",
+    "date": "2026-10-13 - 2026-10-18",
     "class": "2.1",
-    "link": "https://www.procyclingstats.com/race/tour-de-kyushu-2026-gc/overview"
+    "link": "https://www.procyclingstats.com/race/eneco-tour-2026-gc/overview"
   }
 ]
